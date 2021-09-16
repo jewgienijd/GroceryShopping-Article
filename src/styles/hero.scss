@@ -1,0 +1,60 @@
+@import './basic.scss';
+@import './variables.scss';
+@import './fonts.scss';
+
+.hero {
+    height: 100vh;
+    position: relative;
+    background-image: url('../img/hero.jpg');
+    background-size: 140%;
+    background-position-x: 50%;
+    &__title {
+        font-family: $fontBarBlack;
+        color: $colorFontHeader;
+        text-align: center;
+        padding-top: 5%;
+    }
+    &__title_1 {
+        font-size: 67px;
+    }
+    &__title_2 {
+        font-size: 48px;
+    }
+    &__title_3 {
+        font-size: 88px;
+        letter-spacing: 0.1rem;
+        line-height: 80px;
+    }
+    &__text {
+        font-family: $fontBarBold;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 2%;
+    }
+    &__scroll {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left:50%;
+        transform:translate(-50%, -50%);
+        &_btn {
+            font-family: $fontBarBold;
+            font-size: 22px;
+            color: #fff;
+            padding: 0.5rem 2rem;
+            letter-spacing: 5px;
+            opacity: 0.8;
+            background-color: $colorFontHeader;
+            border: none;
+            border-radius: 60px;            
+        }
+        &_triangle {
+            margin: 20px auto 0 auto;
+            width: 0;
+	        height: 0;
+	        border-width: 33px 17.5px 0 17.5px;
+	        border-color: $colorFontHeader transparent transparent transparent;
+	        border-style: solid;
+        }
+    }
+}
