@@ -1,0 +1,22 @@
+@import './basic.scss';
+@import './variables.scss';
+@import './fonts.scss';
+
+.advices {
+    background-image: url('../img/bg-texture.jpg');
+    &__header {
+        text-align: center;
+        &_title {
+            font-family: $fontBarBold;
+            font-size: 24px;
+            color: $colorFontHeader;
+            padding-top: 10%;
+        }
+        &_line {
+            width: 72px;
+            height: 10px;
+            background-color: $colorFontTitle;
+            margin: 5% auto;
+        }
+    }
+}

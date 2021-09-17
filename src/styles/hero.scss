@@ -13,6 +13,7 @@
         color: $colorFontHeader;
         text-align: center;
         padding-top: 5%;
+        transform: translateY(-100%);
     }
     &__title_1 {
         font-size: 67px;
@@ -30,6 +31,7 @@
         font-size: 22px;
         text-align: center;
         padding-top: 2%;
+        transform: translateY(20%);
     }
     &__scroll {
         text-align: center;

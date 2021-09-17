@@ -14,3 +14,6 @@ import '../img/hero.jpg';
 import '../img/bg-texture.jpg';
 import '../img/quote-img2.jpg';
 import '../img/slider1-img.png';
+
+//ANIMATIONS
+import'./animations.js';

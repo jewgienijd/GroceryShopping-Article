@@ -1,0 +1,50 @@
+@import './basic.scss';
+@import './variables.scss';
+@import './fonts.scss';
+
+.article {
+    margin: 20% auto;
+    &__first {
+        &_capital {
+            font-family: $fontBarBold;
+            font-size: 96px;
+            color: $colorFontHeader;
+            line-height: 70px;
+            float: left;
+            padding-right: 10px;
+        }
+        p {
+            padding-bottom: 5%;
+        }
+    }
+    &__opinion {
+        display: flex;
+        align-items: center;
+        padding: 2% 0;
+        border-bottom: 5px solid $colorFontTitle;
+        &_image {
+            max-width: 40%;
+            position: relative;
+            left: -10%;
+            right: 0;
+            img {
+                max-width: 115%;
+            }
+        }
+        &_quote {
+            color: $colorFontTitle;
+        } 
+        &_text {
+            font-family: $fontBarBold;
+            font-size: 22px;
+            color: $colorFontTitle;
+            text-align: left;
+        }
+        &_person {
+            padding-top: 2%;
+        }       
+    }
+    &__second {
+        padding-top: 10%;
+    }
+}

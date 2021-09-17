@@ -1,6 +1,23 @@
+@import './variables.scss';
+@import './fonts.scss';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+._container {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+}
+
+._text {
+    font-family: $fontBarMedium;
+    color: #494949;
+}
+
+
 
