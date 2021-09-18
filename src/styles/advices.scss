@@ -20,3 +20,106 @@
         }
     }
 }
+
+.slider {
+    &__wrapper {
+        background-color: #fff;
+        margin: 5% 20% 2% 20%;
+    }
+    &__item {
+        &_top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &_image {
+            max-width: 20%;
+            position: relative;
+            left: -5%;
+            right: 0;
+            bottom: 10%;
+            img {
+                max-width: 115%;
+            }
+        }
+        &_title {
+            font-family: $fontBarBlack;
+            color: $colorFontHeader;
+            font-size: 24px;
+        }
+        &_content {
+            font-size: 18px;
+            font-family: $fontBarMedium;
+            margin-top: 1rem;
+            strong {
+                color: $colorFontHeader;
+            }
+        }
+        &_arrow {
+            color:$colorFontTitle;
+            margin: auto 1.5rem auto 1rem;
+            .md-72 {
+                font-size: 72px !important;
+              }
+        }
+        &_line {
+            height: 3px;
+            width: 80%;
+            background-color: $colorFontTitle;
+            margin: 10px auto;
+        }
+        &_link {
+            font-family: $fontBarLight;
+            font-size: 14px;
+            color:#6D6D6D;
+            text-align: center;
+            padding-bottom: 20px;
+            a {
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        animation-name: fade;
+        animation-duration: 1.5s;
+        @keyframes fade {
+            from {
+                transform: translate(-15%);
+            }
+            to {
+                transform: translate(0);
+            }
+        }
+    }
+    &__numbers {
+        text-align: center;
+        padding-bottom: 40px;
+        &_item {
+            font-family: $fontBarBold;
+            font-size: 14px;
+            color: $colorFontTitle;
+            padding: 5px 10px;
+            margin: auto 15px auto 15px;
+            &:hover {
+                cursor: pointer;
+                color: #fff;
+                background-color: rgba(218, 57, 62, 0.7);
+                border-radius: 50%;
+            }
+            &_active {
+                color:#fff;
+                background-color: $colorFontTitle;
+                border-radius: 50%;                
+            }
+        }
+    }
+}
+
+.active {
+    color:#fff;
+    background-color: $colorFontTitle;
+    border-radius: 50%;                
+}
+

@@ -1,5 +1,3 @@
-console.log('Test_2');
-
 //STYLES
 import '../styles/style.scss';
 
@@ -14,6 +12,12 @@ import '../img/hero.jpg';
 import '../img/bg-texture.jpg';
 import '../img/quote-img2.jpg';
 import '../img/slider1-img.png';
+import '../img/slider2-img.png';
+import '../img/slider3-img.png';
+import '../img/slider4-img.png';
 
 //ANIMATIONS
 import'./animations.js';
+
+//SLIDER
+import './slider.js'
