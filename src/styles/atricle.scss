@@ -31,14 +31,12 @@
                 max-width: 115%;
             }
         }
-        &_quote {
-            color: $colorFontTitle;
-        } 
         &_text {
             font-family: $fontBarBold;
             font-size: 22px;
             color: $colorFontTitle;
             text-align: left;
+            padding-top: 2%;
         }
         &_person {
             padding-top: 2%;

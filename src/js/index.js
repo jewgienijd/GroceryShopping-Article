@@ -15,6 +15,7 @@ import '../img/slider1-img.png';
 import '../img/slider2-img.png';
 import '../img/slider3-img.png';
 import '../img/slider4-img.png';
+import '../img/quotes.svg';
 
 //ANIMATIONS
 import'./animations.js';

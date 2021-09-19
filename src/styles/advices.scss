@@ -24,23 +24,59 @@
 .slider {
     &__wrapper {
         background-color: #fff;
-        margin: 5% 20% 2% 20%;
+        margin: 80px 20% 30px 20%;
     }
     &__item {
         &_top {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 100%;
+            justify-content: start;
+            align-items: flex-start;
+            padding: 7% 5% 5% 0;
         }
-        &_image {
-            max-width: 20%;
-            position: relative;
-            left: -5%;
-            right: 0;
-            bottom: 10%;
+        &_image-1 {
+            position: absolute;
+            width: 218px;
             img {
-                max-width: 115%;
+                position: relative;
+                left: -32px;
+                top: -108px;
+                width: 100%;
             }
+        }
+        &_image-2 {
+            position: absolute;
+            width: 300px;
+            img {
+                position: relative;
+                left: -96px;
+                top: -20px;
+                width: 100%;
+            }
+        }
+        &_image-3 {
+            position: absolute;
+            width: 273px;
+            img {
+                position: relative;
+                top: -67px;
+                left: -108px;
+                width: 100%;
+            }
+        }
+        &_image-4 {
+            position: absolute;
+            width: 204px;
+            img {
+                position: relative;
+                top: -92px;
+                left: -24px;
+                width: 100%;
+            }
+        }
+        &_left-block {
+            padding-left: 240px;
+            max-width: 470px;
         }
         &_title {
             font-family: $fontBarBlack;
@@ -57,16 +93,20 @@
         }
         &_arrow {
             color:$colorFontTitle;
-            margin: auto 1.5rem auto 1rem;
+            text-align: left;
+            margin: auto;
             .md-72 {
                 font-size: 72px !important;
               }
+        }
+        &_block {
+            max-width: 250px;
         }
         &_line {
             height: 3px;
             width: 80%;
             background-color: $colorFontTitle;
-            margin: 10px auto;
+            margin: 20px auto 10px auto;
         }
         &_link {
             font-family: $fontBarLight;
@@ -87,15 +127,18 @@
         @keyframes fade {
             from {
                 transform: translate(-15%);
+                opacity: 0;
             }
             to {
                 transform: translate(0);
+                opacity: 1;
             }
         }
     }
     &__numbers {
         text-align: center;
         padding-bottom: 40px;
+        margin-top: 10px;
         &_item {
             font-family: $fontBarBold;
             font-size: 14px;
