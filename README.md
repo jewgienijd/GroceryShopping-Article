@@ -10,6 +10,7 @@ This website was inspired based on InVision design.
 - HTML5
 - CSS3
 - Sass(Scss)
+- Webpack
 
 # Project assignments
 - only desktop version (window width: 1200-1920px)
